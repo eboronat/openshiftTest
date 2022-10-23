@@ -12,7 +12,7 @@ jobs:
     
     steps:
     
-    - uses: action/checkout@v3
+    - uses: actions/checkout@v3
     - name: Kiuwan Baseline Analysis
       uses: lsacera/KiuwanBaselineAction@v1.3
       with:
