@@ -14,7 +14,7 @@ jobs:
     
     - uses: action/checkout@v2
     - name: Kiuwan Baseline Analysis
-      uses: lsacera/KiuwanBaselineAction@v1.1
+      uses: lsacera/KiuwanBaselineAction@v1.3
       with:
           kiuwanbaseurl: https://www.kiuwan.com
           project: finanzas-backend-application
