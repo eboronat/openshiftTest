@@ -1,0 +1,23 @@
+name: Kiuwan
+
+on: 
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - uses: action/checkout@v2
+    - name: Kiuwan Baseline Analysis
+      uses: lsacera/KiuwanBaselineAction@v1.1
+      with:
+          kiuwanbaseurl: https://www.kiuwan.com
+          project: finanzas-backend-application
+          userid: ${{ secrets.KIUWAN_USER}}
+          password: ${{ secrets.KIUWAN_PASSWORD}}
+          
